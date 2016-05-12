@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "podTestLibrary"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of podTestLibrary."
+  s.version          = "1.0.0"
+  s.summary          = "For test Pods Function"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/podTestLibrary"
+  s.homepage         = "https://github.com/iray68/podTestLibrary"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "yiray" => "yirayg@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/podTestLibrary.git", :tag => s.version.to_s }
+  s.source           = { :git => "git@github.com:Iray68/podTestLibrary.git", :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
+  s.platform    = :ios, "7.0"
+  # s.ios.deployment_target = '8.0'
 
   s.source_files = 'podTestLibrary/Classes/**/*'
   
@@ -39,4 +39,10 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+
+  s.subspec 'Podtest' do |dataModel|
+      dataModel.source_files = 'podTestLibrary/Classes/Podtest/**/*'
+      dataModel.public_header_files = 'podTestLibrary/Classes/Podtest/**/*.h'
+  end
 end

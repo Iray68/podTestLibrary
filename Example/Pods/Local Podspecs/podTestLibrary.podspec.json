@@ -1,19 +1,26 @@
 {
   "name": "podTestLibrary",
-  "version": "0.1.0",
-  "summary": "A short description of podTestLibrary.",
+  "version": "1.0.0",
+  "summary": "For test Pods Function",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/podTestLibrary",
+  "homepage": "https://github.com/iray68/podTestLibrary",
   "license": "MIT",
   "authors": {
     "yiray": "yirayg@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/podTestLibrary.git",
-    "tag": "0.1.0"
+    "git": "git@github.com:Iray68/podTestLibrary.git",
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "7.0"
   },
-  "source_files": "podTestLibrary/Classes/**/*"
+  "source_files": "podTestLibrary/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "Podtest",
+      "source_files": "podTestLibrary/Classes/Podtest/**/*",
+      "public_header_files": "podTestLibrary/Classes/Podtest/**/*.h"
+    }
+  ]
 }
