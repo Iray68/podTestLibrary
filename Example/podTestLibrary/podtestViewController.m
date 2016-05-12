@@ -7,7 +7,7 @@
 //
 
 #import "podtestViewController.h"
-
+#import "podTestLibrary/Podtest.h"
 @interface podtestViewController ()
 
 @end
@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    Podtest *test = [Podtest new];
+    [test hellotest];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

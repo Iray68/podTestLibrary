@@ -1,0 +1,16 @@
+PODS:
+  - podTestLibrary (0.1.0)
+
+DEPENDENCIES:
+  - podTestLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  podTestLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  podTestLibrary: efed10b0f588770cbbe594043aa7c93db79f45ed
+
+PODFILE CHECKSUM: 41e7507227102cf4a63367d5c2d7b8f4c40c3020
+
+COCOAPODS: 1.0.0
